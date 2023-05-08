@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84FFFF"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Base De Datos: Mi Agenda"
+        android:textColor="@color/black"
+        android:background="#00E676"
+        android:textStyle="normal|bold"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"/>
+    <ImageView
+        android:id="@+id/Ver_Foto"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="90dp"
+        android:layout_width="220dp"
+        android:src="@drawable/bd"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Introduzca el nombre o teléfono"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="230dp"/>
+
+    <EditText
+        android:id="@+id/txtCriterio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="#030204"
+        android:backgroundTintMode="add"
+        android:hint="Nombre o teléfono"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/Buscar"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="BUSCAR"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:drawableRight="@drawable/ico"
+        android:backgroundTint="#222950"
+        android:layout_marginTop="310dp"/>
+    <Button
+        android:id="@+id/Agregar"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="AGREGAR"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:drawableRight="@drawable/per"
+        android:backgroundTint="#222950"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="310dp"/>
+    <ListView
+        android:id="@+id/lvContactos"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="365dp"/>
+</RelativeLayout>
