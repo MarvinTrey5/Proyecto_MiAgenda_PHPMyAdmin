@@ -4,6 +4,6 @@ public class Configuraciones {
     public String URLWB;
 
     public Configuraciones(){
-        this.URLWB = "http://192.168.143.161:8080/ws_app/webservices02.php";
+        this.URLWB = "http://192.168.70.161:8080/ws_app/webservices02.php";
     }
 }

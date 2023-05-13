@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:padding="5dp"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -11,32 +12,24 @@
         android:text="Nombre Contacto"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:id="@+id/tvTituloFilaContacto"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="5dp" />
+        android:id="@+id/tvTituloFilaContacto"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
         android:text="Telefono"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:id="@+id/tvTelefonoFilaContacto"
-        android:layout_below="@+id/tvTituloFilaContacto"
-        android:layout_alignStart="@+id/tvTituloFilaContacto"
-        android:layout_marginBottom="5dp" />
+        android:layout_marginTop="40dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:text="Ver Contacto"
         android:id="@+id/btnVerContacto"
-        android:layout_below="@+id/tvTelefonoFilaContacto"
-        android:layout_alignEnd="@+id/tvTelefonoFilaContacto"
         android:textColor="#FFFFFF"
         android:textSize="14dp"
         android:background="#1c3d57"
-        android:layout_marginBottom="5dp" />
+        android:layout_marginTop="70dp"/>
 </RelativeLayout>

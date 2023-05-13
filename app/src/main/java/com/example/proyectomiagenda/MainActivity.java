@@ -3,11 +3,9 @@ package com.example.proyectomiagenda;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,11 +22,9 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,14 +45,10 @@ public class MainActivity extends AppCompatActivity {
         txtCriterio = findViewById(R.id.txtCriterio);
         ListContactos = findViewById(R.id.lvContactos);
         BtonBuscar = findViewById(R.id.Buscar);
-        BtonBuscar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        BtonBuscar.setOnClickListener(view ->  {
                 llenarLista();
-            }
         });
     }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -140,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(ventanaModificar);
                     }
                 });
-            }catch (Exception e){
+            }catch (JSONException e){
                 e.printStackTrace();
             }
             return v;
